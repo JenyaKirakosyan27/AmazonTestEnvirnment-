@@ -13,7 +13,7 @@ class NavigationBar(BasePage):
     def fill_search_field(self, searchElement):
         textFieldElement = self._find_element(By.NAME, "field-keywords")
         self._fill_field(textFieldElement, searchElement)
-        #textFieldElement.send_keys(searchElement)
+       
 
     def click_to_search_button(self):
         searchButtonElement = self._find_element(By.ID, "nav-search-submit-button")
