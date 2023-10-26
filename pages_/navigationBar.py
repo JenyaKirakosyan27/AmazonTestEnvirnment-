@@ -19,7 +19,5 @@ class NavigationBar(BasePage):
         searchButtonElement = self._find_element(By.ID, "nav-search-submit-button")
         self._click_to_element(searchButtonElement)
 
-    def click_to_first_product(self):
-        firstProductElement = self._find_element(By.XPATH, "(//div[@class='a-section aok-relative s-image-square-aspect'])[1]")
-        self._click_to_element(firstProductElement)
+   
 
