@@ -2,6 +2,7 @@ from selenium import webdriver
 from pages_.loginPage import LoginPage
 from pages_.navigationBar import NavigationBar
 from pages_.searchResultPage import SearchResultPage
+from pages_.productDetailsPage import ProductDetailsPage
 
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
@@ -25,6 +26,8 @@ navigationBarObj.click_to_search_button()
 
 searchResultPageObj = SearchResultPage(driver)
 searchResultPageObj.click_to_first_product()
-searchResultPageObj.click_to_add_to_cart_button()
+
+productDetailsPageObj = ProductDetailsPage(driver)
+productDetailsPageObj.click_to_add_to_cart_button()
 
 driver.close()
